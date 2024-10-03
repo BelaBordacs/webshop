@@ -3,7 +3,7 @@ export default class KosarElem {
       this.termek = termek;
     }
   
-    //
+    //Létrehozzuk a kosár elemeit --> név, ár, kosárba gomb, mad visszaadjuk az elemet
     letrehozKosarElem() {
       const $elem = $(`
         <div class="kosarElem">
