@@ -15,5 +15,12 @@ export default class Kartya {
           <button class="orderButton">Kosárba</button>
         </div>
       `);
+  
+      // Kosárba gombra kattintás eseménykezelő 
+      $kartya.find('button').on('click', () => {
+        this.kosarbaGombCallback(this.termek);
+      });
+  
+      return $kartya;
     }
   }
