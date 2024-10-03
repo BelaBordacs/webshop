@@ -1,11 +1,15 @@
 import { LIST } from "./productList.js"
 
-export default  class TermekekModell {
-    constructor (){
-        this.productList = [LIST]
+export default class TermekekModell {
+    //kell egy üres lista
+    #lista = [];
+    constructor() {
+        this.#lista = LIST;
     };
 
-    getTermekek() {
-        return this.termekLista;
-    }
+    //getterrel elérem a listát
+    getTermekek(){
+        return this.#lista
+    };
+
 };
